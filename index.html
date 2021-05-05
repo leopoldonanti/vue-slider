@@ -15,7 +15,13 @@
 
     <div class="display">
 
-      <h1>Il Vecchio Conio</h1>
+      <h1>Il Vecchio Conio </h1>
+
+      <div class="frame-btn">
+        <h1 @click="resetPlay" class="stop">Stop</h1>
+        <h1 @click="play" class="play">Play</h1>
+      </div>
+      
 
       <img :src="photos[counterPhoto]" alt="">
       

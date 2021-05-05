@@ -19,20 +19,32 @@ const app = new Vue({
       this.counterPhoto++;
       if(this.counterPhoto === this.photos.length)this.counterPhoto = 0;
     },
-
     prevPhoto(){
       this.counterPhoto--;
       if(this.counterPhoto < 0)this.counterPhoto = this.photos.length - 1; 
     },
-
-
-    
-
+    resetPlay: function() {
+      clearInterval(this.timer);
+      /* this.play(); */
+      console.log("minghieee");
+    },
+    play: function() {
+      let app = this;
+      this.timer = setInterval(function() {
+        app.nextPhoto();
+      }, 1000);
+    }
+  },
+  created: function() {
+    this.play();
   }
 
 
 
 
+
 });
+
+
 
  
