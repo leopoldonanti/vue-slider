@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app" 
+  class="container">
+
+    <div class="display">
+
+      <h1>Il Vecchio Conio</h1>
+
+      <img :src="photos[counterPhoto]" alt="">
+      
+      <div class="wrapper">
+        <div class="col prev" @click="prevPhoto">
+          <i class="fab fa-galactic-senate fa-rotate-270"></i>
+        </div>
+
+        <div class="pulsantiera">
+
+          <i v-for="(photo, index) in photos" 
+            :class="(index === counterPhoto) ? 'active' : null"
+            @click="(counterPhoto = index)" 
+            class="fas fa-crosshairs"></i> 
+            
+        </div>
+
+          <div class="col next" @click="nextPhoto">
+            <i class="fab fa-galactic-senate fa-rotate-90"></i>    
+          </div>
+      </div>
+      
+      </div>
+
+    </div>
+    
+    
+    
+  </div>
+  
+
+
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
