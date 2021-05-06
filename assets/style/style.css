@@ -72,6 +72,7 @@ img:hover{
   align-items: center;
   justify-content: center;
   font-size: 30px;
+  cursor: pointer;
 }
 .frame-btn{
   width: 50%;
@@ -90,6 +91,7 @@ img:hover{
 }
 .fab, .fas{
   color: goldenrod;
+  cursor: pointer;
 }
 .fab:active{
   color: goldenrod;

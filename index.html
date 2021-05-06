@@ -18,14 +18,16 @@
       <h1>Il Vecchio Conio </h1>
 
       <div class="frame-btn">
+
         <h1 @click="resetPlay" class="stop">Stop</h1>
         <h1 @click="play" class="play">Play</h1>
+        
       </div>
       
-
       <img :src="photos[counterPhoto]" alt="">
       
       <div class="wrapper">
+
         <div class="col prev" @click="prevPhoto">
           <i class="fab fa-galactic-senate fa-rotate-270"></i>
         </div>
@@ -38,22 +40,18 @@
             class="fas fa-crosshairs"></i> 
             
         </div>
-
+        
           <div class="col next" @click="nextPhoto">
             <i class="fab fa-galactic-senate fa-rotate-90"></i>    
           </div>
-      </div>
+
+        </div>
       
       </div>
 
     </div>
     
-    
-    
   </div>
-  
-
-
 
   <script src="assets/js/script.js"></script>
 </body>
